@@ -15,22 +15,25 @@ export default function Home() {
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto flex flex-col items-center px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="relative w-full max-w-xs mx-auto">
-                <Avatar className="h-40 w-40 rounded-full">
+            
+            <div className="flex flex-col md:items-center gap-4 md:gap-6 w-full max-w-2xl">
+              {/* Mobile: Image Left, Text Right | Desktop: Image Top, Text Bottom */}
+              <div className="flex flex-row md:flex-col items-center justify-start md:justify-center gap-6 text-left md:text-center w-full">
+                <Avatar className="h-40 w-40 flex-shrink-0">
                   <AvatarImage src="https://picsum.photos/160/160" data-ai-hint="profile picture" />
                   <AvatarFallback className="text-5xl">KC</AvatarFallback>
                 </Avatar>
-              </div>
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl font-headline">
-                  Kiara Chanel Camilo Villavicencio
-                </h1>
-                <p className="text-muted-foreground md:text-xl">
-                  Estudiante de Informática y aspirante a experta en Ciberseguridad.
-                </p>
+                <div className="space-y-2">
+                  <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl font-headline">
+                    Kiara Chanel Camilo Villavicencio
+                  </h1>
+                  <p className="text-muted-foreground md:text-xl">
+                    Estudiante de Informática y aspirante a experta en Ciberseguridad.
+                  </p>
+                </div>
               </div>
             </div>
+
             <div className="mt-10 flex w-full max-w-2xl flex-col gap-8">
               <Card>
                 <CardHeader>
