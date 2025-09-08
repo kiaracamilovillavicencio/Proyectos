@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex h-16 items-center justify-center border-t border-white/10 bg-background">
+      <footer className="flex h-16 items-center justify-center border-t border-black/10 bg-background">
         <p className="text-sm text-muted-foreground">
           &copy; 2024 Kiara's Corner. Todos los derechos reservados.
         </p>
