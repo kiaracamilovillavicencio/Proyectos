@@ -65,5 +65,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: linear-gradient(to top, hsla(262, 83%, 90%, 0.8), hsl(var(--background)));
   }
 }

@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Bed, Tent, Smartphone, User } from "lucide-react";
+import { BookOpen, Bed, Tent, Smartphone, User, Twitter, Facebook, Instagram } from "lucide-react";
 
 export default function Home() {
   const hobbies = [
@@ -34,20 +34,20 @@ export default function Home() {
             <div className="mt-12 flex w-full max-w-2xl flex-col gap-8">
               <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-2xl font-bold">
+                  <CardTitle className="flex items-center gap-2 text-2xl font-bold transition-colors duration-300 hover:text-primary">
                     <User className="h-6 w-6" />
                     Sobre Mí
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground/90 text-justify">
+                  <p className="text-foreground/90 text-justify first-letter:text-7xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left">
                     Tengo 17 años, nací el 9 de junio de 2008 en Santo Domingo Este y me caracterizo por mi creatividad, alegría y liderazgo. Actualmente estudio en el área técnica de Informática en el Politécnico Nuestra Señora del Perpetuo Socorro, donde me he destacado por mis excelentes calificaciones. Mi sueño es desarrollarme profesionalmente en el área de Ciberseguridad.
                   </p>
                 </CardContent>
               </Card>
               <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold">Mis Hobbies</CardTitle>
+                  <CardTitle className="text-2xl font-bold transition-colors duration-300 hover:text-primary">Mis Hobbies</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -64,10 +64,21 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex h-16 items-center justify-center border-t bg-transparent">
+      <footer className="flex h-16 flex-col items-center justify-center gap-4 border-t bg-transparent sm:h-20 sm:flex-row sm:justify-between sm:px-12">
         <p className="text-sm text-muted-foreground">
           &copy; 2024 Kiara Chanel. Todos los derechos reservados.
         </p>
+        <div className="flex items-center gap-4">
+          <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+            <Twitter className="h-5 w-5" />
+          </a>
+          <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+            <Facebook className="h-5 w-5" />
+          </a>
+          <a href="#" className="text-muted-foreground transition-colors hover:text-primary">
+            <Instagram className="h-5 w-5" />
+          </a>
+        </div>
       </footer>
     </div>
   );
