@@ -25,7 +25,7 @@ export default function Home() {
                 <div className="absolute -inset-1 rounded-full bg-primary blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               </div>
               <div className="space-y-2">
-                <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl font-headline">
+                <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl font-headline">
                   Kiara Chanel Camilo Villavicencio
                 </h1>
               </div>
