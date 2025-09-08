@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Kiara's Corner",
-  description: "Personal website for Kiara Chanel Camilo Villavicencio",
+  title: 'Kiara Chanel Camilo Villavicencio',
+  description: 'Personal website for Kiara Chanel Camilo Villavicencio',
 };
 
 export default function RootLayout({
