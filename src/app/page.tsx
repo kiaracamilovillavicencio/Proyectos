@@ -11,7 +11,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex min-h-screen w-full flex-col bg-background">
+    <div className="flex min-h-screen w-full flex-col bg-background font-body">
       <main className="flex-1 animate-fade-in-down">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto flex flex-col items-center px-4 md:px-6">
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="mt-12 flex w-full max-w-2xl flex-col gap-8">
               <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 font-body text-2xl font-bold">
+                  <CardTitle className="flex items-center gap-2 text-2xl font-bold">
                     <User className="h-6 w-6" />
                     Sobre Mí
                   </CardTitle>
@@ -47,7 +47,7 @@ export default function Home() {
               </Card>
               <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20">
                 <CardHeader>
-                  <CardTitle className="font-body text-2xl font-bold">Mis Hobbies</CardTitle>
+                  <CardTitle className="text-2xl font-bold">Mis Hobbies</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex h-16 items-center justify-center border-t border-black/10 bg-background">
+      <footer className="flex h-16 items-center justify-center border-t bg-background">
         <p className="text-sm text-muted-foreground">
           &copy; 2024 Kiara's Corner. Todos los derechos reservados.
         </p>
