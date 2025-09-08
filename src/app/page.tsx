@@ -12,52 +12,49 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
-      <main className="flex-1">
+      <main className="flex-1 animate-fade-in-down">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto flex flex-col items-center px-4 md:px-6">
             
-            <div className="flex flex-col md:items-center gap-4 md:gap-6 w-full max-w-2xl">
-              {/* Mobile: Image Left, Text Right | Desktop: Image Top, Text Bottom */}
-              <div className="flex flex-row md:flex-col items-center justify-start md:justify-center gap-6 text-left md:text-center w-full">
-                <Avatar className="h-40 w-40 flex-shrink-0">
+            <div className="flex flex-col items-center gap-6 text-center w-full max-w-2xl">
+              <div className="relative group">
+                <Avatar className="h-40 w-40 transition-transform duration-300 group-hover:scale-105">
                   <AvatarImage src="https://i.ibb.co/Y45CtQbp/foto.jpg" data-ai-hint="profile picture" />
                   <AvatarFallback className="text-5xl">KC</AvatarFallback>
                 </Avatar>
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl font-headline">
-                    Kiara Chanel Camilo Villavicencio
-                  </h1>
-                  <p className="text-muted-foreground md:text-xl">
-                    Estudiante de Informática y aspirante a experta en Ciberseguridad.
-                  </p>
-                </div>
+                <div className="absolute -inset-1 rounded-full bg-primary blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              </div>
+              <div className="space-y-2">
+                <h1 className="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl font-headline">
+                  Kiara Chanel Camilo Villavicencio
+                </h1>
               </div>
             </div>
 
-            <div className="mt-10 flex w-full max-w-2xl flex-col gap-8">
-              <Card>
+            <div className="mt-12 flex w-full max-w-2xl flex-col gap-8">
+              <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20">
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2 font-headline">
+                  <CardTitle className="flex items-center gap-2 font-body text-2xl font-bold">
                     <User className="h-6 w-6" />
                     Sobre Mí
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground">
+                  <p className="text-foreground/90">
                     Tengo 17 años, nací el 9 de junio de 2008 en Santo Domingo Este y me caracterizo por mi creatividad, alegría y liderazgo. Actualmente estudio en el área técnica de Informática en el Politécnico Nuestra Señora del Perpetuo Socorro, donde me he destacado por mis excelentes calificaciones. Mi sueño es desarrollarme profesionalmente en el área de Ciberseguridad.
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20">
                 <CardHeader>
-                  <CardTitle className="font-headline">Mis Hobbies</CardTitle>
+                  <CardTitle className="font-body text-2xl font-bold">Mis Hobbies</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     {hobbies.map((hobby) => (
                       <li key={hobby.name} className="flex items-center gap-3">
                         {hobby.icon}
-                        <span className="font-medium text-foreground">{hobby.name}</span>
+                        <span className="font-medium text-foreground/90">{hobby.name}</span>
                       </li>
                     ))}
                   </ul>
@@ -67,7 +64,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex h-16 items-center justify-center border-t bg-card">
+      <footer className="flex h-16 items-center justify-center border-t border-white/10 bg-background">
         <p className="text-sm text-muted-foreground">
           &copy; 2024 Kiara's Corner. Todos los derechos reservados.
         </p>
