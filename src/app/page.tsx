@@ -20,7 +20,7 @@ export default function Home() {
               {/* Mobile: Image Left, Text Right | Desktop: Image Top, Text Bottom */}
               <div className="flex flex-row md:flex-col items-center justify-start md:justify-center gap-6 text-left md:text-center w-full">
                 <Avatar className="h-40 w-40 flex-shrink-0">
-                  <AvatarImage src="https://i.ibb.co/6H62s5w/kiara.png" data-ai-hint="profile picture" />
+                  <AvatarImage src="https://i.ibb.co/Y45CtQbp/foto.jpg" data-ai-hint="profile picture" />
                   <AvatarFallback className="text-5xl">KC</AvatarFallback>
                 </Avatar>
                 <div className="space-y-2">
